@@ -1,0 +1,136 @@
+<html>
+  <head>
+    <title>Noticias EJs 2020</title>
+    <meta charset="UTF-8">
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+      }
+
+      body > header, body > footer {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        height: 40px;
+        color: white;
+      }
+
+      body > header {
+        background-color: #3C91E6;
+      }
+
+      body > footer {
+        background-color: #e63c3c;
+      }
+
+      main {
+        min-height: calc(100vh - 2*60px);
+      }
+
+      main > article {
+        max-width: 800px;
+        margin: auto;
+        padding: 30px 0;
+      }
+
+      main h1, main h2, main h3, main h4, main h5, main h6 {
+        margin: 0;
+      }
+
+      article > header {
+        margin-bottom: 30px;
+      }
+
+      main h1 {
+        color: rgba(0, 0, 0, .84);
+        letter-spacing: 0.1em;
+      }
+
+      main h4 {
+        color: rgba(0, 0, 0, .54);
+        letter-spacing: 0.08em;
+      }
+
+      .ImageMosaic--Flex {
+        max-width: 100%;
+        display: flex;
+      }
+
+      .ImageMosaic--Flex > img {
+        width: 20%;
+      }
+
+      .ImageMosaic--Grid {
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-areas: "fb wp pt"
+                             "fb li ig";
+      }
+
+      .ImageMosaic--Flex, .ImageMosaic--Grid {
+        margin: 30px 0;
+      }
+
+      .ImageMosaic--Flex > img, .ImageMosaic--Grid > img {
+        max-width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="">Home</a>
+        <a href="https://www.facebook.com/guilherme.tassinari" target="_blank">Facebook</a>
+      </nav>
+    </header>
+    <main role="main">
+      <article>
+        <header>
+          <hgroup>
+            <h1>IDE Jr. alcança um crescimento anual de 300% em 2020!</h1>
+            <h4>Empresa Júnior dos cursos de computação da UFRGS atinge marca histórica, jamais atingida por outra EJ na história do MEJ!</h2>
+          </hgroup>
+        </header>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+        <div class="ImageMosaic--Flex">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/1024px-Facebook_f_logo_%282019%29.svg.png" />
+          <img src="https://i.pinimg.com/originals/c9/d2/34/c9d2347a80a91b5147a578da2a4bbfae.png" />
+          <img src="https://cdn.worldvectorlogo.com/logos/pinterest-1.svg" />
+          <img src="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-linkedin-circle-512.png" />
+          <img src="https://logodownload.org/wp-content/uploads/2015/04/whatsapp-logo-1.png" />
+        </div>
+
+        <div class="ImageMosaic--Grid">
+          <img style="grid-area: fb;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/1024px-Facebook_f_logo_%282019%29.svg.png" />
+          <img style="grid-area: ig;" src="https://i.pinimg.com/originals/c9/d2/34/c9d2347a80a91b5147a578da2a4bbfae.png" />
+          <img style="grid-area: pt;" src="https://cdn.worldvectorlogo.com/logos/pinterest-1.svg" />
+          <img style="grid-area: li;" src="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-linkedin-circle-512.png" />
+          <img style="grid-area: wp;" src="https://logodownload.org/wp-content/uploads/2015/04/whatsapp-logo-1.png" />
+        </div>
+        <footer>
+          Written by @guilherme.tassinari
+        </footer>
+      </article>
+    </main>
+    <footer>
+      copyright @ alguma coisa
+    </footer>
+  </body>
+</html>
+
