@@ -1,0 +1,81 @@
+body {
+  font-family: "Amatic SC";
+  margin: 0;
+}
+
+.ContainerSection {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.MenuSection {
+  background-color: black;
+}
+
+.SectionTitle {
+  color: white;
+  font-size: 35px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.Menu {
+  background-color: white;
+  border:  1px solid white;
+  width: 800px;
+  max-height: 600px;
+  overflow-y: scroll;
+}
+
+.Menu__Header {
+  display: flex;
+}
+
+.Menu__Header > button {
+  font-family: "Amatic SC";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: black;
+  flex-grow: 1;
+  color: white;
+  border: none;
+}
+
+.Menu__Header > button:focus {
+  outline: none;
+}
+
+.Menu__Header > button:active {
+  outline: none;
+}
+
+.Menu__Header > button.Active {
+  background-color: #F44336;
+}
+
+.Menu__ProductList > ul {
+  margin: 0;
+  padding: 0;
+}
+
+.Product {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px;
+  font-size: 25px;
+}
+
+.Product__Header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Product__Title {
+  flex-grow: 1;
+  font-weight: bold;
+}

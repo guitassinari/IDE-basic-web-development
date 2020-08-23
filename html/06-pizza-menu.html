@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="../css/pizza.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC" >
+    <script defer type="text/javascript" src="../js/menu.js"></script>
+  </head>
+  <body>
+    <section class="ContainerSection MenuSection">
+      <h1 class="SectionTitle">The Menu</h1>
+      <div class="Menu">
+        <div class="Menu__Header">
+          <button data-select-product-type="pizza" class="Active">
+            Pizza
+          </button>
+          <button data-select-product-type="salad">
+            Salads
+          </button>
+          <button data-select-product-type="starter">
+            Starter
+          </button>
+        </div>
+        <div class="Menu__ProductList">
+          <ul>
+            <li data-product-type="pizza" class="Product">
+              <div class="Product__Header">
+                <div class="Product__Title">Produto Pizza</div>
+                <div class="Product__Price">R$ 20,00</div>
+              </div>
+              <div class="Product__Description">Descricao</div>
+            </li>
+            <li data-product-type="salad" class="Product">
+              <div class="Product__Header">
+                <div class="Product__Title">Produto Salad</div>
+                <div class="Product__Price">R$ 20,00</div>
+              </div>
+              <div class="Product__Description">Descricao</div>
+            </li>
+            <li data-product-type="starter" class="Product">
+              <div class="Product__Header">
+                <div class="Product__Title">Produto Starter</div>
+                <div class="Product__Price">R$ 20,00</div>
+              </div>
+              <div class="Product__Description">Descricao</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
