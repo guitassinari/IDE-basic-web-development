@@ -1,0 +1,28 @@
+body {
+  font-family: "Amatic SC";
+  margin: 0;
+}
+
+.ContainerSection {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.MenuSection {
+  background-color: black;
+  height: 800px;
+}
+
+.SectionTitle {
+  color: white;
+  font-size: 35px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.Menu {
+  background-color: white;
+  height: 600px;
+  width: 800px;
+}
