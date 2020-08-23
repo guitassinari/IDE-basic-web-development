@@ -1,3 +1,8 @@
+const productButtons = document.querySelectorAll(`button[data-select-product-type]`)
+productButtons.forEach(button => {
+  button.onclick = () => filterProductsByType(button.dataset.selectProductType)
+})
+
 function filterProductsByType(type) {
   const productsToShow = document.querySelectorAll(`[data-product-type="${type}"]`)
   if (productsToShow.length === 0) {
